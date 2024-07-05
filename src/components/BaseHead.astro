@@ -1,0 +1,53 @@
+---
+interface Props {
+  title: string;
+  description: string;
+}
+
+import "../styles/tailwind.css";
+// Caladea Font
+import "@fontsource/caladea/400.css";
+import "@fontsource/caladea/700.css";
+import "@fontsource/caladea/400-italic.css";
+// Alegreta Font
+import "@fontsource/alegreya/400.css";
+import "@fontsource/alegreya/400-italic.css";
+import "@fontsource/alegreya/700.css";
+// Baloo Chettan Malayalam Font
+import "@fontsource/baloo-chettan-2/400.css";
+import "@fontsource/baloo-chettan-2/700.css";
+// Manjari Malayalam Font
+import "@fontsource/manjari/100.css";
+import "@fontsource/manjari/400.css";
+import "@fontsource/manjari/700.css";
+
+const { title, description } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+{/* Primary Meta Tags */}
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+
+{/* Canonical URL */}
+<link rel="canonical" href={canonicalURL} />
+
+{/* OG Metadata - Facebook and others use it */}
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+
+{/* Twitter metadata */}
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+
+{/* Robots.txt equivalent */}
+<meta name="robots" content="index,follow" />

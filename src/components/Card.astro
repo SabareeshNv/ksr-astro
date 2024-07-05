@@ -1,0 +1,42 @@
+---
+import { Picture } from "astro:assets";
+import Date from "./Date.astro";
+
+const { post, aboveFold = false } = Astro.props;
+const { title, pubDate, summary, coverImage, coverAlt } = post.data;
+---
+
+<article>
+  <a href={`/article/${post.slug}/`}>
+    {
+      aboveFold ? (
+        <Picture
+          src={coverImage}
+          alt={coverAlt}
+          loading={"eager"}
+          fetchpriority={"high"}
+          decoding={"sync"}
+          class="rounded-sm aspect-video shadow"
+        />
+      ) : (
+        <Picture
+          src={coverImage}
+          alt={coverAlt}
+          class="rounded-sm aspect-video shadow"
+        />
+      )
+    }
+  </a>
+
+  <Date date={pubDate} class="mt-3 mb-2 text-lg lg:text-xl" />
+
+  <h2>
+    <a href={`/article/${post.slug}/`} class="text-2xl lg:text-3xl font-bold"
+      >{title}</a
+    >
+  </h2>
+
+  <div class="mt-4 text-lg font-manjari">
+    {summary}
+  </div>
+</article>

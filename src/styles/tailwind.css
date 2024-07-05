@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --clr-primary: #106b76;
+    --clr-dark: #070504;
+    --clr-secondary: #761B10;
+    --clr-accent: #f5f5f4;
+    --clr-brand: #761B10;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body>footer {
+    position: sticky;
+    top: 100vh;
+}
+
+.font-manjari {
+    font-feature-settings: "psts" off, "pres" off;
+}
+
+picture,
+img {
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+    text-align: center;
+    background-color: #d1d5db;
+}
+
+@layer components {
+    .frame-grid {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr;
+
+        @media (min-width: 800px) {
+            gap: 2.5rem;
+            grid-template-columns: 2.5fr 1fr;
+        }
+    }
+
+    .typography {
+        @apply prose prose-xl xl:prose-2xl mx-auto text-gray-900 marker:text-gray-800;
+        @apply prose-headings:font-alegreya prose-a:text-[var(--clr-brand)] prose-a:underline-offset-8;
+
+        overflow-wrap: break-word;
+        /* So long texts don't cause overflow */
+
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-bottom: 1rem;
+        }
+
+        blockquote {
+            margin: auto 1rem;
+            padding: 0.25rem 1rem;
+            border-inline-start: 4px solid var(--clr-dark);
+            background-color: var(--clr-accent);
+            font-style: normal;
+            @apply shadow-sm;
+        }
+    }
+}
+
+@layer utilities {
+    .wrapper {
+        max-width: 1600px;
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    .heading::after {
+        content: "";
+        display: block;
+        margin-top: 10px;
+        width: clamp(2em, 25%, 3em);
+        height: 3px;
+        background-color: var(--clr-secondary);
+    }
+}

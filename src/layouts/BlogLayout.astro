@@ -1,0 +1,26 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+import SearchField from "../components/SearchField.astro";
+import TagCloud from "../components/TagCloud.astro";
+
+const { title, description, pubDate, coverImage, coverAlt } = Astro.props;
+
+const titleSEO = `${title} | KeralaServiceRules.com`;
+const descSEO = `${description} | KeralaServiceRules.com`;
+---
+
+<BaseLayout title={titleSEO} description={descSEO}>
+  <main>
+    <Hero {title} {pubDate} {coverImage} {coverAlt} />
+    <div class="wrapper frame-grid py-5 lg:py-10">
+      <article class="typography font-manjari">
+        <slot />
+      </article>
+      <aside>
+        <SearchField />
+        <TagCloud />
+      </aside>
+    </div>
+  </main>
+</BaseLayout>

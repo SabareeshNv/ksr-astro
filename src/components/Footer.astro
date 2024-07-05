@@ -1,0 +1,51 @@
+---
+const footer = [
+    { text: "Privacy Policy", link: "/privacy-policy" },
+    { text: "RSS Feed", link: "/rss.xml" },
+    { text: "Editorial Policy", link: "/editorial-policy" },
+];
+
+function getCurrentYear() {
+    return new Date().getFullYear();
+}
+---
+
+<footer class="bg-[#000000e6] text-gray-100 py-7 mt-4">
+    <div class="wrapper footer-grid">
+        <ul class="flex flex-wrap w-full gap-4 items-center justify-evenly">
+            {
+                footer.map((item) => (
+                    <li>
+                        <a href={item.link}>{item.text}</a>
+                    </li>
+                ))
+            }
+        </ul>
+        <div class="text-center copy">
+            Copyright © {getCurrentYear} | LoneVoice.in
+        </div>
+    </div>
+</footer>
+
+<style>
+    .footer-grid {
+        display: grid;
+        gap: 0.75rem;
+        grid-template-columns: 1fr;
+    }
+    @media (min-width: 800px) {
+        .footer-grid {
+            grid-template-columns: 2fr 1fr;
+            gap: 0.25rem;
+        }
+
+        ul {
+            justify-content: normal;
+            gap: 1.25rem;
+        }
+
+        .copy {
+            text-align: right;
+        }
+    }
+</style>

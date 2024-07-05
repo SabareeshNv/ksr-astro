@@ -1,0 +1,33 @@
+---
+const nav = [
+  { text: "Home", link: "/" },
+  { text: "Articles", link: "/article" },
+  { text: "Downloads", link: "/downloads" },
+  { text: "About", link: "/about" },
+  { text: "Contact", link: "/contact" },
+];
+---
+
+<header class="shadow-md py-3">
+  <nav class="wrapper grid md:grid-cols-2">
+    <div class="text-center pb-3 md:pb-0 md:text-left">
+      <a href="/" class="font-bold text-xl lg:text-2xl">Kerala Service Rules</a>
+    </div>
+    <ul
+      class="flex flex-wrap items-center justify-evenly md:justify-end md:gap-8 lg:gap-12"
+    >
+      {
+        nav.map((item) => (
+          <li>
+            <a
+              href={item.link}
+              class="text-lg hover:text-[var(--clr-secondary)] hover:underline hover:underline-offset-8 hover:decoration-2"
+            >
+              {item.text}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</header>

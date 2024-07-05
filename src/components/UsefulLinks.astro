@@ -1,0 +1,27 @@
+---
+const nav = [
+    { text: "Govt. of Kerala Website", link: "https://kerala.gov.in/" },
+    {
+        text: "Departmental Test Website",
+        link: "https://www.keralapsc.gov.in/departmental-test",
+    },
+    { text: "Kerala PSC Website", link: "https://www.keralapsc.gov.in/" },
+    { text: "Spark Website", link: "https://www.spark.gov.in/webspark/" },
+    { text: "Medisep Website", link: "https://medisep.kerala.gov.in/" },
+];
+---
+
+<div class="mb-4 md:mb-5 lg:mb-6">
+    <div class="text-xl lg:text-2xl font-semibold heading mb-4">
+        Useful Links
+    </div>
+    <div class="flex flex-col flex-wrap">
+        {
+            nav.map((item) => (
+                <a href={`${item.link}`} class="mb-3 text-lg hover:underline">
+                    {item.text}
+                </a>
+            ))
+        }
+    </div>
+</div>
