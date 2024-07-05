@@ -3,11 +3,7 @@
 @tailwind utilities;
 
 :root {
-    --clr-primary: #106b76;
-    --clr-dark: #070504;
-    --clr-secondary: #761B10;
-    --clr-accent: #f5f5f4;
-    --clr-brand: #761B10;
+    --clr-dark: #070504c3;
 }
 
 html,
@@ -48,12 +44,11 @@ img {
     }
 
     .typography {
-        @apply prose prose-xl xl:prose-2xl mx-auto text-gray-900 marker:text-gray-800;
-        @apply prose-headings:font-alegreya prose-a:text-[var(--clr-brand)] prose-a:underline-offset-8;
+        @apply prose prose-lg lg:prose-xl xl:prose-2xl prose-stone marker:text-stone-700 mx-auto;
+        @apply prose-headings:font-alegreya prose-a:text-brand prose-a:underline-offset-8;
 
         overflow-wrap: break-word;
         /* So long texts don't cause overflow */
-
 
         h1,
         h2,
@@ -65,12 +60,9 @@ img {
         }
 
         blockquote {
-            margin: auto 1rem;
-            padding: 0.25rem 1rem;
             border-inline-start: 4px solid var(--clr-dark);
-            background-color: var(--clr-accent);
             font-style: normal;
-            @apply shadow-sm;
+            @apply mx-4 py-1 px-4 shadow-sm bg-gray-100;
         }
     }
 }
@@ -88,6 +80,6 @@ img {
         margin-top: 10px;
         width: clamp(2em, 25%, 3em);
         height: 3px;
-        background-color: var(--clr-secondary);
+        @apply bg-brand
     }
 }

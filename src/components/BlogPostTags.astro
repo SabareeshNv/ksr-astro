@@ -10,7 +10,7 @@ const { tags } = Astro.props;
             tags.map((tag: string) => (
                 <a
                     href={`/tag/${slugify(tag)}`}
-                    class="bg-[var(--clr-accent)] rounded p-2 hover:bg-[var(--clr-accent-hover)]"
+                    class="bg-gray-100 rounded p-2 hover:bg-gray-200"
                 >
                     #{tag}
                 </a>

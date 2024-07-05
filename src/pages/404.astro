@@ -1,0 +1,33 @@
+---
+import { Picture } from "astro:assets";
+
+import notfound from "../assets/images/notfound.png";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "404 Error - Page Not found | KeralaServiceRules.com";
+const description = "Page Not found | KeralaServiceRules.com";
+---
+
+<BaseLayout {title} {description}>
+    <main class="wrapper py-6">
+        <div class="max-w-md mx-auto">
+            <Picture
+                src={notfound}
+                alt="page not found"
+                formats={["avif", "webp"]}
+                loading={"eager"}
+                fetchpriority={"high"}
+                decoding={"sync"}
+                class="mx-auto w-80 mt-6 md:mt-8 lg:mt-10 xl:mt-12"
+            />
+            <p class="text-center text-lg md:text-xl lg:text-2xl mt-6">
+                The page you are looking for does not exist. You may check our
+                <a
+                    href="/"
+                    class="text-brand underline underline-offset-4 decoration-2"
+                    >Homepage</a
+                >
+            </p>
+        </div>
+    </main>
+</BaseLayout>

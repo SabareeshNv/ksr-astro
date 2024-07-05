@@ -9,6 +9,10 @@ export default {
                 "baloo": ['"Baloo Chettan 2"', "sans-serif"],
                 "manjari": ["Manjari", "sans-serif"]
             },
+            colors: {
+                "brand": "#761B10",
+                "accent": "#f5f5f4",
+            },
             typography: {
                 DEFAULT: {
                     css: {
