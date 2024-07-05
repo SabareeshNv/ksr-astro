@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Card from "../../components/Card.astro";
+import SearchField from "../../components/SearchField.astro";
+import TagCloud from "../../components/TagCloud.astro";
+import { fetchAndFilterPosts } from "../../utils/helpers";
+import UsefulLinks from "../../components/UsefulLinks.astro";
+
+const posts = await fetchAndFilterPosts();
+
+const title = "All our Articles | KeralaServiceRules.com";
+const description =
+    "Here are all our articles published | KeralaServiceRules.com";
+---
+
+<BaseLayout {title} {description}>
+    <main class="wrapper py-6">
+        <div class="frame-grid">
+            <div class="grid sm:grid-cols-2 2xl:grid-cols-3 gap-8">
+                {
+                    /* First 2 images should not be lazy loaded to please Google */
+                    posts
+                        .slice(0, 2)
+                        .map((post) => <Card {post} aboveFold={true} />)
+                }
+                {posts.slice(2).map((post) => <Card {post} />)}
+            </div>
+            <aside>
+                <SearchField />
+                <UsefulLinks />
+                <TagCloud />
+            </aside>
+        </div>
+    </main>
+</BaseLayout>

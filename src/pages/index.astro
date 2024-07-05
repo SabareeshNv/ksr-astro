@@ -3,13 +3,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Card from "../components/Card.astro";
 import SearchField from "../components/SearchField.astro";
 import TagCloud from "../components/TagCloud.astro";
-import { fetchAndFilterPosts } from "../utils/helpers";
 import UsefulLinks from "../components/UsefulLinks.astro";
+import { fetchAndFilterPosts } from "../utils/helpers";
 
 const posts = await fetchAndFilterPosts();
 
-const title = "Home Page";
-const description = "default description";
+const title =
+	"കേരളാ സർവീസ് ചട്ടങ്ങൾ ലളിതമായ മലയാളത്തിൽ | KSR in simple Malayalam language | KeralaServiceRules.com";
+const description =
+	"കേരളാ സർവീസ് ചട്ടങ്ങൾ ലളിതമായി മനസിലാവുന്ന മലയാളത്തിൽ . Kerala Service Rules (KSR) in simple malayalam. PDF download";
 ---
 
 <BaseLayout {title} {description}>
