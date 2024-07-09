@@ -4,9 +4,9 @@ malayalamTitle: പ്രസവാവധി
 description: KSR-ൽ പറയുന്ന പ്രസവാവധിയെ കുറിച്ച ഒരു ലേഖനം
 summary: "default summary"
 pubDate: "2023-03-29"
-coverImage: "../../assets/images/articles/maternity-leave.webp"
+coverImage: "../../assets/images/articles/office.jpg"
 coverAlt: "An illustration of a mother with her baby"
-tags: ["maternity", "leave"]
+tags: ["Maternity", "Leave"]
 ---
 
 ഗർഭിണിയായ അല്ലെങ്കിൽ ഒരു കുട്ടിക്ക് ജന്മം നൽകിയ വനിതാ ജീവനക്കാരിക്ക് അനുവദിക്കുന്ന ഒരു പ്രത്യേക തരം അവധിയാണ് പ്രസവാവധി. അമ്മയെ വിശ്രമിക്കാനും അവളുടെ ആരോഗ്യത്തെയും കുഞ്ഞിനെയും പരിപാലിക്കാനും അനുവദിക്കുക എന്നതാണ് പ്രസവാവധിയുടെ ഉദ്ദേശ്യം.[KSR Part 1, Rule 100]
