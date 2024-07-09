@@ -28,12 +28,10 @@ const { title, pubDate, summary, coverImage, coverAlt } = post.data;
     }
   </a>
 
-  <Date date={pubDate} class="mt-3 mb-2 text-lg lg:text-xl" />
+  <Date date={pubDate} class="mt-3 mb-2 text-lg" />
 
   <h2>
-    <a href={`/article/${post.slug}/`} class="text-2xl lg:text-3xl font-bold"
-      >{title}</a
-    >
+    <a href={`/article/${post.slug}/`} class="text-2xl font-bold">{title}</a>
   </h2>
 
   <div class="mt-4 text-lg font-manjari">

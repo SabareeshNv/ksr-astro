@@ -12,13 +12,11 @@ const nav = [
 ---
 
 <div class="mb-4 md:mb-5 lg:mb-6">
-    <div class="text-xl lg:text-2xl font-semibold heading mb-4">
-        Useful Links
-    </div>
+    <div class="text-xl font-semibold heading mb-4">Useful Links</div>
     <div class="flex flex-col flex-wrap">
         {
             nav.map((item) => (
-                <a href={`${item.link}`} class="mb-3 text-lg hover:underline">
+                <a href={`${item.link}`} class="mb-3 hover:underline">
                     {item.text}
                 </a>
             ))

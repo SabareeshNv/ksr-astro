@@ -1,11 +1,11 @@
 ---
 title: "Casual Leave"
-malayalamTitle: "കാഷ്വൽ ലീവ് (ആകസ്മിക അവധി)"
+malayalamTitle: "ആകസ്മിക അവധി"
 description: "Casual Leave is one among many types of leave available to a service member. Here are some important information related to Casual Leave."
 summary: "default summary"
 pubDate: "2020-11-01"
-coverImage: "../../assets/images/articles/jap.jpg"
-coverAlt: "A man in office"
+coverImage: "../../assets/images/articles/casual-leave.png"
+coverAlt: "casual leave"
 tags: ["Casual Leave","Leave"]
 ---
 
