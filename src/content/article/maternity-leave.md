@@ -4,7 +4,7 @@ malayalamTitle: പ്രസവാവധി
 description: KSR-ൽ പറയുന്ന പ്രസവാവധിയെ കുറിച്ച ഒരു ലേഖനം
 summary: "default summary"
 pubDate: "2023-03-29"
-coverImage: "../../assets/images/articles/office.jpg"
+coverImage: "../../assets/images/articles/maternity-leave.webp"
 coverAlt: "An illustration of a mother with her baby"
 tags: ["Maternity", "Leave"]
 ---

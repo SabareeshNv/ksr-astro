@@ -1,37 +1,29 @@
 ---
 import Date from "./Date.astro";
-import { Picture } from "astro:assets";
+import { Image } from "astro:assets";
 
 const { title, malayalamTitle, pubDate, coverImage, coverAlt } = Astro.props;
 ---
 
-<section class="relative">
-  <Picture
+<section>
+  <div class="wrapper">
+    <div class="mt-8">
+      <Date date={pubDate} class="text-lg lg:text-xl mb-2" />
+      <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-1">
+        {title}
+      </h1>
+      <span class="font-manjari text-2xl lg:text-3xl block mb-4"
+        >{malayalamTitle}</span
+      >
+    </div>
+  </div>
+  <Image
     src={coverImage}
     alt={coverAlt}
     loading={"eager"}
     fetchpriority={"high"}
     decoding={"sync"}
     quality={"max"}
-    class="hero-image w-full h-full max-h-[600px]"
+    class="bg-[#374151] w-full min-h-[200px] max-h-[600px]"
   />
-  <div class="wrapper">
-    <div class="absolute bottom-4 md:bottom-8 lg:bottom-10 text-gray-100">
-      <Date date={pubDate} class="text-lg lg:text-xl mb-3 md:mb-4 lg:mb-6" />
-      <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold">
-        {title}
-      </h1>
-      <span class="font-manjari text-2xl lg:text-3xl mt-4 block"
-        >{malayalamTitle}</span
-      >
-    </div>
-  </div>
 </section>
-
-<style is:inline>
-  .hero-image {
-    filter: brightness(0.7);
-    background-color: rgb(55, 65, 81);
-    z-index: -1;
-  }
-</style>
