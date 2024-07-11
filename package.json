@@ -17,10 +17,8 @@
     "typescript": "^5.5.2"
   },
   "devDependencies": {
-    "@fontsource/caladea": "^5.0.13",
-    "@fontsource/manjari": "^5.0.21",
     "@fontsource/alegreya": "^5.0.13",
-    "@fontsource/baloo-chettan-2": "^5.0.20",
+    "@fontsource/manjari": "^5.0.21",
     "@tailwindcss/typography": "^0.5.13",
     "astro-pagefind": "^1.5.0",
     "pagefind": "^1.1.0",
