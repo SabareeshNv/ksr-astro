@@ -27,6 +27,9 @@ importers:
       '@fontsource/baloo-chettan-2':
         specifier: ^5.0.20
         version: 5.0.20
+      '@fontsource/bitter':
+        specifier: ^5.0.19
+        version: 5.0.19
       '@fontsource/caladea':
         specifier: ^5.0.13
         version: 5.0.13
@@ -374,6 +377,9 @@ packages:
 
   '@fontsource/baloo-chettan-2@5.0.20':
     resolution: {integrity: sha512-eOQ8hv+1zCfdlH5uajZ/oT0m7NhZMdYArdbIczB6+lThkh9K5XvoL/XFlJheOyKbVqqTnEf627ZzaBP10YmZMA==}
+
+  '@fontsource/bitter@5.0.19':
+    resolution: {integrity: sha512-D6a6P01wbqglg2XyqYY//9qsYOSN++r4LSMRzIS7MME0rCxywF3nXtk9gduITCtQ92Fsp3P9YEVlOd+UwYdN0w==}
 
   '@fontsource/caladea@5.0.13':
     resolution: {integrity: sha512-3OZYuh/jtU92Rl1zdLsLaQL11w5BcEo6XfEwMmvNiRDO+loeKo+rOa3hmPhWths0Ar3Y/9/PuAuTyf0yjtbKNw==}
@@ -2730,6 +2736,8 @@ snapshots:
   '@fontsource/alegreya@5.0.13': {}
 
   '@fontsource/baloo-chettan-2@5.0.20': {}
+
+  '@fontsource/bitter@5.0.19': {}
 
   '@fontsource/caladea@5.0.13': {}
 

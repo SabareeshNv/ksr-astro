@@ -6,6 +6,7 @@ export default {
             fontFamily: {
                 "caladea": ["Caladea", "serif"],
                 "alegreya": ["Alegreya", "serif"],
+                "bitter": ["Bitter", "serif"],
                 "baloo": ['"Baloo Chettan 2"', "sans-serif"],
                 "manjari": ["Manjari", "sans-serif"]
             },

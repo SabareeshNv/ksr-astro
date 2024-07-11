@@ -11,7 +11,7 @@ const tagData: { name: string; slug: string }[] = generateTagData(uniqueTags);
 ---
 
 <div class="mb-4 md:mb-5 lg:mb-6">
-    <div class="text-xl font-semibold heading mb-4">Topics</div>
+    <div class="text-xl font-medium heading mb-4">Topics</div>
     <p class="mb-4">
         Here are all the topics we've posts about. Click to view all articles
         regarding similar topics.
@@ -21,7 +21,7 @@ const tagData: { name: string; slug: string }[] = generateTagData(uniqueTags);
             tagData.map((tag) => (
                 <a
                     href={`/tag/${tag.slug}`}
-                    class="rounded p-2 bg-gray-100 hover:bg-gray-200"
+                    class="rounded p-2 bg-gray-100 hover:bg-gray-200 text-sm"
                 >
                     {tag.name}
                 </a>
