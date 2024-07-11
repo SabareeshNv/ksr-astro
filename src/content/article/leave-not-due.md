@@ -4,8 +4,8 @@ malayalamTitle: മുൻ‌കൂർ അവധി
 description: ഓർഡിനറി ലീവ് ആയ ലീവ് നോട്ട് ഡ്യൂ എന്നതിനേ കുറിച്ച് ഒരു ലേഖനം
 summary: "default summary"
 pubDate: "2021-09-23"
-coverImage: "../../assets/images/articles/maternity-leave.webp"
-coverAlt: "An illustration of a mother with her baby"
+coverImage: "../../assets/images/articles/leave-not-due.png"
+coverAlt: "Leave Not Due"
 tags:
   - Leave Not Due
   - Half Pay Leave

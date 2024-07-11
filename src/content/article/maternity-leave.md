@@ -2,7 +2,7 @@
 title: Maternity Leave
 malayalamTitle: പ്രസവാവധി
 description: KSR-ൽ പറയുന്ന പ്രസവാവധിയെ കുറിച്ച ഒരു ലേഖനം
-summary: "default summary"
+summary: "ഈ ലേഖനം ജീവനക്കാർക്കുള്ള പ്രസവാവധിയെക്കുറിച്ചു വിശദീകരിക്കുന്നു. ലീവ് കാലയളവ്, യോഗ്യത, അവധിക്കാലത്തെ ശമ്പളം, മറ്റ് അവധികളുമായി പ്രസവാവധി സംയോജിപ്പിക്കൽ എന്നിവയെ കൂടാതെ ഗർഭം അലസലിനും ഗർഭാശയ നീക്കം ചെയ്യുന്നതിനുമുള്ള വ്യവസ്ഥകളും ചർച്ച ചെയ്യുന്നു."
 pubDate: "2023-03-29"
 coverImage: "../../assets/images/articles/maternity-leave.webp"
 coverAlt: "An illustration of a mother with her baby"

@@ -62,7 +62,7 @@ img {
         blockquote {
             border-inline-start: 4px solid var(--clr-dark);
             font-style: normal;
-            @apply mx-4 py-1 px-4 shadow-sm bg-gray-100;
+            @apply md:mx-2 lg:mx-4 py-1 px-4 shadow-sm bg-gray-100;
         }
     }
 }

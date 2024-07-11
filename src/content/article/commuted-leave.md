@@ -2,7 +2,7 @@
 title: Commuted Leave
 malayalamTitle: പരിവർത്തിത അവധി
 description: ഓർഡിനറി ലീവ് ആയ കമ്മ്യൂട്ടഡ് ലീവിനേക്കുറിച്ചു ഒരു ലേഖനം | an article about Commuted Leave in KSR
-summary: "Commuted leave summary goes here."
+summary: "ലീവ് കമ്മ്യൂട്ടേഷനെ കുറിച്ച് ഒരു ലേഖനം "
 pubDate: "2021-08-15"
 coverImage: "../../assets/images/articles/commuted-leave.png"
 coverAlt: "commuted leave"
