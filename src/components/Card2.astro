@@ -1,0 +1,32 @@
+---
+import { Image } from "astro:assets";
+import Date from "./Date.astro";
+
+const { post, aboveFold = false } = Astro.props;
+const { title, pubDate, summary, coverImage, coverAlt } = post.data;
+---
+
+<article class="card-grid">
+    <a href={`/article/${post.slug}/`}>
+        <Image
+            src={coverImage}
+            alt={coverAlt}
+            class="rounded-sm h-full aspect-video"
+        />
+    </a>
+
+    <div>
+        <Date date={pubDate} class="mb-2" />
+
+        <h2>
+            <a
+                href={`/article/${post.slug}/`}
+                class="text-xl lg:text-2xl font-bold">{title}</a
+            >
+        </h2>
+
+        <div class="mt-3 font-manjari">
+            {summary}
+        </div>
+    </div>
+</article>

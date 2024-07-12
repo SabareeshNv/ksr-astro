@@ -2,7 +2,7 @@
 title: Joining Time
 malayalamTitle: പ്രവേശനകാലം
 description: An article about Joining Time allowed to an officer as per KSR - Kerala
-summary: "Default Summary"
+summary: "ഈ ലേഖനം പ്രവേശനകാലം സംബന്ധിച്ച വ്യവസ്ഥകളെ കുറിച്ച് വിവരിക്കുന്നു."
 pubDate: "2022-11-02"
 coverImage: "../../assets/images/articles/maternity-leave.webp"
 coverAlt: "An illustration of a mother with her baby"

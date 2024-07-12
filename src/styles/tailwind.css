@@ -43,6 +43,16 @@ img {
         }
     }
 
+    .card-grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+
+        @media (min-width: 640px) {
+            grid-template-columns: 2fr 3fr;
+        }
+    }
+
     .typography {
         @apply prose prose-lg lg:prose-xl xl:prose-2xl prose-stone marker:text-stone-700 mx-auto;
         @apply prose-a:text-brand prose-a:underline-offset-8;

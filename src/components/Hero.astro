@@ -9,7 +9,7 @@ const { title, malayalamTitle, pubDate, coverImage, coverAlt } = Astro.props;
   <div class="wrapper">
     <div class="mt-8">
       <Date date={pubDate} class="text-lg lg:text-xl mb-2" />
-      <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-1">
+      <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-2">
         {title}
       </h1>
       <span class="font-manjari text-2xl lg:text-3xl block mb-4"
@@ -24,6 +24,6 @@ const { title, malayalamTitle, pubDate, coverImage, coverAlt } = Astro.props;
     fetchpriority={"high"}
     decoding={"sync"}
     quality={"max"}
-    class="bg-[#374151] w-full max-h-[600px]"
+    class="bg-[#374151] w-full aspect-video max-h-[600px]"
   />
 </section>

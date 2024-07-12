@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Card from "../components/Card.astro";
+import Card2 from "../components/Card2.astro";
 import SearchField from "../components/SearchField.astro";
 import TagCloud from "../components/TagCloud.astro";
 import UsefulLinks from "../components/UsefulLinks.astro";
@@ -17,14 +18,8 @@ const description =
 <BaseLayout {title} {description}>
 	<main class="wrapper py-6">
 		<div class="frame-grid">
-			<div class="grid sm:grid-cols-2 2xl:grid-cols-3 gap-10 md:gap-4">
-				{
-					/* First 2 images should not be lazy loaded to please Google */
-					posts
-						.slice(0, 2)
-						.map((post) => <Card {post} aboveFold={true} />)
-				}
-				{posts.slice(2).map((post) => <Card {post} />)}
+			<div class="grid gap-12">
+				{posts.map((post) => <Card2 {post} />)}
 			</div>
 			<aside>
 				<SearchField />
