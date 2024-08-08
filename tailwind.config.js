@@ -14,6 +14,8 @@ export default {
                 // "brand": "#761B10",
                 "brand": "#591C2F",
                 "accent": "#f5f5f4",
+                "dark": "#2d3032",
+                "bgg": "#f1f1f1"
             },
             typography: {
                 DEFAULT: {

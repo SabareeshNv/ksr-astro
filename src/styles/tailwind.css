@@ -4,6 +4,8 @@
 
 :root {
     --clr-dark: #070504c3;
+    --clr-darky: #2d3032;
+
 }
 
 html,
@@ -54,7 +56,7 @@ img {
     }
 
     .typography {
-        @apply prose prose-lg lg:prose-xl xl:prose-2xl prose-stone marker:text-stone-700 mx-auto;
+        @apply prose prose-lg lg:prose-xl prose-stone marker:text-stone-700 mx-auto;
         @apply prose-a:text-brand prose-a:underline-offset-8;
 
         overflow-wrap: break-word;
@@ -79,7 +81,7 @@ img {
 
 @layer utilities {
     .wrapper {
-        max-width: 1600px;
+        max-width: 1200px;
         width: 90%;
         margin-inline: auto;
     }
