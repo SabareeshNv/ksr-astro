@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import headShot from "../assets/images/ksr.jpg";
+---
+
+<Image
+  src={headShot}
+  alt="KSR logo"
+  loading={"eager"}
+  fetchpriority={"high"}
+  decoding={"sync"}
+/>

@@ -1,0 +1,26 @@
+---
+import { Icon } from "astro-icon/components";
+
+const { date, ...props } = Astro.props;
+
+const fullDate = date.toISOString();
+const localDateString = date.toLocaleDateString("en-us", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+---
+
+<div {...props}>
+  <Icon name="date" />
+  <time datetime={fullDate}>{localDateString}</time>
+</div>
+
+<style>
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.25em;
+  }
+</style>

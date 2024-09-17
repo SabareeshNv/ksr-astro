@@ -1,0 +1,6 @@
+# Ignore artifacts:
+build
+dist
+coverage
+.astro
+node_modules
