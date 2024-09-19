@@ -2,7 +2,7 @@
 title: Joining Time
 malayalamTitle: പ്രവേശനകാലം
 description: An article about Joining Time allowed to an officer as per KSR - Kerala
-summary: "ട്രാൻസ്ഫർ ലഭിച്ച ഉദ്യോഗസ്ഥന് പുതിയ ഓഫീസിൽ ഡ്യൂട്ടിയിൽ ചേരാൻ അനുവദിക്കുന്ന സമയമായ പ്രവേശനകാലത്തെ കുറിച്ചു വിശദീകരിക്കുന്നു"
+summary: "ട്രാൻസ്ഫർ ലഭിച്ച ഉദ്യോഗസ്ഥന് പുതിയ ഓഫീസിൽ ഡ്യൂട്ടിയിൽ ചേരാൻ അനുവദിക്കുന്ന സമയമായ പ്രവേശനകാലത്തെ കുറിച്ചു ഒരു വിശദീകരണം"
 pubDate: "2022-11-02"
 coverImage: "../../assets/images/articles/joining_time/joining_time.png"
 coverAlt: "An illustration for joining time allowed for an employee"

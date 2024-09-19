@@ -2,7 +2,7 @@
 title: Earned Leave
 malayalamTitle: ആർജിത അവധി
 description: An article about Earned Leave in KSR | ആർജിത അവധിയേ കുറിച്ച് ഒരു ലേഖനം
-summary: "സർക്കാർ ജീവനത്തിൽ പ്രവേശിച്ച ആദ്യവർഷ ജീവനക്കാരന്, 22 ദിവസത്തെ സേവനത്തിനു 1 ആർജിത അവധി, എന്ന കണക്കിലാണ് അവധി അനുവദിക്കുന്നത്."
+summary: "സർക്കാർ ജീവനക്കാർക്ക് ലഭിക്കുന്ന ഒരു പ്രധാന അവധിയാണ് ആർജിത അവധി. നിശ്ചിത കാലയളവിലെ സേവനത്തിന് ആനുപാതികമായി ലഭിക്കുന്ന ഈ അവധി, കേരള സർവീസ് ചട്ടപ്രകാരം നിയന്ത്രിക്കപ്പെടുന്നു. പരമാവധി 300 ദിവസം വരെ ആർജിത അവധി സമ്പാദിക്കാം."
 pubDate: "2020-12-08"
 coverImage: "../../assets/images/articles/earned_leave/earned_leave.png"
 coverAlt: "earned leave poster"
