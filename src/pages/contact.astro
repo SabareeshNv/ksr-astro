@@ -24,12 +24,13 @@ const description = "Fill this form to contact us.";
                 netlify-honeypot="bot-field"
             >
                 <div>
-                    <label for="name" class="text-sm">Full name</label>
+                    <label for="name" class="text-sm">Full Name</label>
                     <input
                         id="name"
                         name="name"
                         type="text"
-                        placeholder=""
+                        placeholder="Your full name please"
+                        required
                         class="w-full rounded p-3"
                     />
                 </div>
@@ -39,6 +40,22 @@ const description = "Fill this form to contact us.";
                         id="email"
                         name="email"
                         type="email"
+                        placeholder="you@email.com"
+                        required
+                        class="w-full rounded p-3"
+                    />
+                </div>
+                <div>
+                    <label for="phone" class="text-sm">Mobile Number</label>
+                    <input
+                        id="phone"
+                        name="phone"
+                        type="tel"
+                        maxlength="10"
+                        pattern="[0-9]{10}"
+                        placeholder="Your mobile number please"
+                        title="Only numbers are accepted"
+                        required
                         class="w-full rounded p-3"
                     />
                 </div>
@@ -48,6 +65,8 @@ const description = "Fill this form to contact us.";
                         id="message"
                         name="message"
                         rows="3"
+                        placeholder="Write your message here..."
+                        required
                         class="w-full rounded p-3"></textarea>
                 </div>
                 {
