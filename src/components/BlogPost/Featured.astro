@@ -1,0 +1,21 @@
+---
+interface Props {
+    featuredType: "NOTE" | "WARNING" | "IMPORTANT" | "DEFAULT";
+}
+
+const { featuredType = "DEFAULT" } = Astro.props;
+---
+
+<div class={`post-featured`}>
+    <p>
+        <slot />
+    </p>
+</div>
+
+<style>
+    .post-featured {
+        border-inline-start: 4px solid var(--clr-dark);
+        font-style: normal;
+        @apply bg-gray-100 px-4 py-1 shadow-sm md:mx-2 lg:mx-4;
+    }
+</style>
