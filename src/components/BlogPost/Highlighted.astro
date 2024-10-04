@@ -1,19 +1,17 @@
 ---
 interface Props {
-    featuredType: "NOTE" | "WARNING" | "IMPORTANT" | "DEFAULT";
+    highlightType: "NOTE" | "WARNING" | "IMPORTANT" | "DEFAULT";
 }
 
-const { featuredType = "DEFAULT" } = Astro.props;
+const { highlightType = "DEFAULT" } = Astro.props;
 ---
 
-<div class={`post-featured`}>
-    <p>
-        <slot />
-    </p>
+<div class={`post-highlighted`}>
+    <slot />
 </div>
 
 <style>
-    .post-featured {
+    .post-highlighted {
         border-inline-start: 4px solid var(--clr-dark);
         font-style: normal;
         @apply bg-gray-100 px-4 py-1 shadow-sm md:mx-2 lg:mx-4;
