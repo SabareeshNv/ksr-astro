@@ -7,6 +7,7 @@ pubDate: "2022-11-02"
 coverImage: "../../assets/images/articles/joining_time/joining_time.png"
 coverAlt: "An illustration for joining time allowed for an employee"
 tags: ["Joining Time"]
+popularPost: true
 ---
 
 പ്രവേശനകാലം (joining time) എന്നത് സ്ഥലം മാറ്റം / ട്രാൻസ്ഫർ ചെയ്യപ്പെടുന്ന ഒരു ഉദ്യോഗസ്ഥന് പുതിയ സ്റ്റേഷനിൽ അല്ലെങ്കിൽ ഓഫീസിൽ ഡ്യൂട്ടിയിൽ ചേരാൻ അനുവദിച്ച സമയമാണ്.

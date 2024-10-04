@@ -1,0 +1,26 @@
+---
+import { fetchAndFilterPosts } from "../utils/helpers";
+
+const posts = await fetchAndFilterPosts();
+const popularPosts = [];
+for (let i = 0; i < posts.length; i++) {
+  if (posts[i].data.popularPost == true) {
+    popularPosts.push(posts[i]);
+  }
+}
+---
+
+<div class="mb-4 rounded border bg-gray-100 shadow-sm md:mb-5 lg:mb-6">
+  <div class="heading mb-2 px-4 pt-2 text-xl font-medium">Popular Posts</div>
+  <ul class="divide-y-2">
+    {
+      popularPosts.map((post) => (
+        <li class="px-4 py-2">
+          <a href={`/article/${post.slug}`} class="hover:underline">
+            {post.data.title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>

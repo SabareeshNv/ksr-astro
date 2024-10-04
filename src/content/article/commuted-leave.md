@@ -7,6 +7,7 @@ pubDate: "2021-08-15"
 coverImage: "../../assets/images/articles/commuted_leave/commuted_leave.png"
 coverAlt: "commuted leave"
 tags: ["Ordinary Leave", "Leave"]
+popularPost: true
 ---
 
 കമ്മ്യൂട്ടഡ് ലീവ് ഒരു [സ്വാഭാവിക അവധിയാണ്](/article/ordinary-leave/) (Ordinary Leave); ഇത് [അർദ്ധ വേതന അവധിയുടെ](/article/half-pay-leave/) (Half Pay Leave) ഒരു വകഭേദമാണ്.

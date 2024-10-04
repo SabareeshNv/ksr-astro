@@ -5,6 +5,7 @@ import Card from "../components/Card.astro";
 import SearchField from "../components/SearchField.astro";
 import TagCloud from "../components/TagCloud.astro";
 import UsefulLinks from "../components/UsefulLinks.astro";
+import PopularPosts from "../components/PopularPosts.astro";
 import { fetchAndFilterPosts } from "../utils/helpers";
 
 const posts = await fetchAndFilterPosts();
@@ -28,6 +29,7 @@ const description =
       <KsrHeadShot />
       <SearchField />
       <UsefulLinks />
+      <PopularPosts />
       <TagCloud />
     </aside>
   </div>

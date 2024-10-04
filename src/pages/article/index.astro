@@ -5,6 +5,7 @@ import SearchField from "../../components/SearchField.astro";
 import TagCloud from "../../components/TagCloud.astro";
 import { fetchAndFilterPosts } from "../../utils/helpers";
 import UsefulLinks from "../../components/UsefulLinks.astro";
+import PopularPosts from "../../components/PopularPosts.astro";
 
 const posts = await fetchAndFilterPosts();
 
@@ -25,6 +26,7 @@ const description =
     <aside>
       <SearchField />
       <UsefulLinks />
+      <PopularPosts />
       <TagCloud />
     </aside>
   </div>
