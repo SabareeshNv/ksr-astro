@@ -1,7 +1,7 @@
 ---
 interface Props {
-  title: string;
-  description: string;
+    title: string;
+    description: string;
 }
 
 import { ViewTransitions } from "astro:transitions";
@@ -55,10 +55,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 {/* For RSS Autodiscovery - https://docs.astro.build/en/guides/rss/  */}
 <link
-  rel="alternate"
-  type="application/rss+xml"
-  title="കേരളാ സർവീസ് ചട്ടങ്ങൾ ലളിതമായ മലയാളത്തിൽ | KSR in simple Malayalam language | KeralaServiceRules.com"
-  href={new URL("rss.xml", Astro.site)}
+    rel="alternate"
+    type="application/rss+xml"
+    title="കേരളാ സർവീസ് ചട്ടങ്ങൾ ലളിതമായ മലയാളത്തിൽ | KSR in simple Malayalam language | KeralaServiceRules.com"
+    href={new URL("rss.xml", Astro.site)}
 />
 
 {/* For Astros implementation of View Transition CSS */}

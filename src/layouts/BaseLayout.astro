@@ -4,8 +4,8 @@ import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
 
 interface Props {
-  title: string;
-  description: string;
+    title: string;
+    description: string;
 }
 
 const { title, description } = Astro.props;
@@ -13,12 +13,12 @@ const { title, description } = Astro.props;
 
 <!doctype html>
 <html lang="ml" class="scroll-smooth antialiased">
-  <head>
-    <BaseHead {title} {description} />
-  </head>
-  <body class="font-sans text-gray-900">
-    <Navbar />
-    <slot />
-    <Footer />
-  </body>
+    <head>
+        <BaseHead {title} {description} />
+    </head>
+    <body class="font-sans text-gray-900">
+        <Navbar />
+        <slot />
+        <Footer />
+    </body>
 </html>

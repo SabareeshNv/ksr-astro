@@ -7,39 +7,39 @@ import PopularPosts from "../components/PopularPosts.astro";
 import { Image } from "astro:assets";
 
 const { title, malayalamTitle, description, pubDate, coverImage, coverAlt } =
-  Astro.props;
+    Astro.props;
 
 const titleSEO = `${title} | KeralaServiceRules.com`;
 const descSEO = `${description} | KeralaServiceRules.com`;
 ---
 
 <BaseLayout title={titleSEO} description={descSEO}>
-  <main data-pagefind-body>
-    <section class="wrapper frame-grid mt-4">
-      <div>
-        <Hero {title} {malayalamTitle} {pubDate} />
-        <Image
-          src={coverImage}
-          alt={coverAlt}
-          loading={"eager"}
-          fetchpriority={"high"}
-          decoding={"sync"}
-          quality={"max"}
-          class="mt-4 w-full shadow"
-        />
-      </div>
-    </section>
-    <div class="wrapper frame-grid">
-      <article class="grid">
-        <div class="typography font-manjari">
-          <slot />
+    <main data-pagefind-body>
+        <section class="wrapper frame-grid mt-4">
+            <div>
+                <Hero {title} {malayalamTitle} {pubDate} />
+                <Image
+                    src={coverImage}
+                    alt={coverAlt}
+                    loading={"eager"}
+                    fetchpriority={"high"}
+                    decoding={"sync"}
+                    quality={"max"}
+                    class="mt-4 w-full shadow"
+                />
+            </div>
+        </section>
+        <div class="wrapper frame-grid">
+            <article class="grid">
+                <div class="typography font-manjari">
+                    <slot />
+                </div>
+            </article>
+            <aside data-pagefind-ignore="all">
+                <SearchField />
+                <PopularPosts />
+                <TagCloud />
+            </aside>
         </div>
-      </article>
-      <aside data-pagefind-ignore="all">
-        <SearchField />
-        <PopularPosts />
-        <TagCloud />
-      </aside>
-    </div>
-  </main>
+    </main>
 </BaseLayout>

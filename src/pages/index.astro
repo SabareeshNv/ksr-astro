@@ -11,26 +11,28 @@ import { fetchAndFilterPosts } from "../utils/helpers";
 const posts = await fetchAndFilterPosts();
 
 const title =
-  "കേരളാ സർവീസ് ചട്ടങ്ങൾ ലളിതമായ മലയാളത്തിൽ | KSR in simple Malayalam language | KeralaServiceRules.com";
+    "കേരളാ സർവീസ് ചട്ടങ്ങൾ ലളിതമായ മലയാളത്തിൽ | KSR in simple Malayalam language | KeralaServiceRules.com";
 const description =
-  "കേരളാ സർവീസ് ചട്ടങ്ങൾ ലളിതമായി മനസിലാവുന്ന മലയാളത്തിൽ . Kerala Service Rules (KSR) in simple malayalam. PDF download";
+    "കേരളാ സർവീസ് ചട്ടങ്ങൾ ലളിതമായി മനസിലാവുന്ന മലയാളത്തിൽ . Kerala Service Rules (KSR) in simple malayalam. PDF download";
 ---
 
 <BaseLayout {title} {description}>
-  <div class="wrapper frame-grid py-6">
-    <main class="grid gap-12">
-      {
-        /* First 2 images should not be lazy loaded to please Google */
-        posts.slice(0, 2).map((post) => <Card {post} aboveFold={true} />)
-      }
-      {posts.slice(2).map((post) => <Card {post} />)}
-    </main>
-    <aside>
-      <KsrHeadShot />
-      <SearchField />
-      <UsefulLinks />
-      <PopularPosts />
-      <TagCloud />
-    </aside>
-  </div>
+    <div class="wrapper frame-grid py-6">
+        <main class="grid gap-12">
+            {
+                /* First 2 images should not be lazy loaded to please Google */
+                posts
+                    .slice(0, 2)
+                    .map((post) => <Card {post} aboveFold={true} />)
+            }
+            {posts.slice(2).map((post) => <Card {post} />)}
+        </main>
+        <aside>
+            <KsrHeadShot />
+            <SearchField />
+            <UsefulLinks />
+            <PopularPosts />
+            <TagCloud />
+        </aside>
+    </div>
 </BaseLayout>

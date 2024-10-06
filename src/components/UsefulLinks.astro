@@ -1,27 +1,36 @@
 ---
 const nav = [
-  { text: "Govt. of Kerala Website", link: "https://kerala.gov.in/" },
-  {
-    text: "Departmental Test Website",
-    link: "https://www.keralapsc.gov.in/departmental-test",
-  },
-  { text: "Kerala PSC Website", link: "https://www.keralapsc.gov.in/" },
-  { text: "Spark Website", link: "https://www.spark.gov.in/webspark/" },
-  { text: "Medisep Website", link: "https://medisep.kerala.gov.in/" },
+    { text: "Govt. of Kerala Website", link: "https://kerala.gov.in/" },
+    {
+        text: "Departmental Test Website",
+        link: "https://www.keralapsc.gov.in/departmental-test",
+    },
+    { text: "Kerala PSC Website", link: "https://www.keralapsc.gov.in/" },
+    { text: "Spark Website", link: "https://www.spark.gov.in/webspark/" },
+    { text: "Medisep Website", link: "https://medisep.kerala.gov.in/" },
 ];
 ---
 
-<div class="mb-4 rounded border bg-gray-100 p-4 shadow-sm md:mb-5 lg:mb-6">
-  <div class="heading mb-4 text-xl font-medium">Useful Links</div>
-  <ul class="space-y-4">
-    {
-      nav.map((item) => (
-        <li>
-          <a href={`${item.link}`} class="hover:underline">
-            {item.text}
-          </a>
-        </li>
-      ))
-    }
-  </ul>
+<div class="usefull mb-4 rounded border p-4 shadow-sm md:mb-5 lg:mb-6">
+    <div class="mb-4 text-xl font-medium text-gray-100">Useful Links</div>
+    <ul class="space-y-4">
+        {
+            nav.map((item) => (
+                <li>
+                    <a
+                        href={`${item.link}`}
+                        class="text-gray-200 hover:underline"
+                    >
+                        {item.text}
+                    </a>
+                </li>
+            ))
+        }
+    </ul>
 </div>
+
+<style>
+    .usefull {
+        background-color: hsl(240, 100%, 5%);
+    }
+</style>

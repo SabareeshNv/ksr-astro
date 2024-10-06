@@ -5,30 +5,31 @@ import SearchField from "../../components/SearchField.astro";
 import Card from "../../components/Card.astro";
 
 import {
-  fetchAndFilterPosts,
-  generateTagData,
-  unslugify,
+    fetchAndFilterPosts,
+    generateTagData,
+    unslugify,
 } from "../../utils/helpers";
 
 export async function getStaticPaths() {
-  const posts = await fetchAndFilterPosts();
+    const posts = await fetchAndFilterPosts();
 
-  const uniqueTags = [
-    ...new Set(posts.flatMap((post) => post.data.tags)),
-  ] as string[];
+    const uniqueTags = [
+        ...new Set(posts.flatMap((post) => post.data.tags)),
+    ] as string[];
 
-  const tagData: { name: string; slug: string }[] = generateTagData(uniqueTags);
+    const tagData: { name: string; slug: string }[] =
+        generateTagData(uniqueTags);
 
-  return tagData.map((tag) => {
-    const taggedPosts = posts.filter((post) =>
-      post.data.tags.includes(tag.name),
-    );
+    return tagData.map((tag) => {
+        const taggedPosts = posts.filter((post) =>
+            post.data.tags.includes(tag.name),
+        );
 
-    return {
-      params: { tag: tag.slug },
-      props: { posts: taggedPosts },
-    };
-  });
+        return {
+            params: { tag: tag.slug },
+            props: { posts: taggedPosts },
+        };
+    });
 }
 
 const { tag } = Astro.params;
@@ -39,25 +40,27 @@ const description = `Articles about ${tag} | KeralaServiceRules.com`;
 ---
 
 <BaseLayout {title} {description}>
-  <div class="wrapper frame-grid py-6">
-    <main>
-      <h1 class="heading mb-6 text-2xl xl:text-3xl">
-        Articles about <span class="font-bold text-brand"
-          >{`" ${unslugify(tag)} "`}</span
-        >
-      </h1>
+    <div class="wrapper frame-grid py-6">
+        <main>
+            <h1 class="heading mb-6 text-2xl xl:text-3xl">
+                Articles about <span class="font-bold text-brand"
+                    >{`" ${unslugify(tag)} "`}</span
+                >
+            </h1>
 
-      <div class="grid gap-10 lg:gap-8">
-        {
-          /* First 2 images should not be lazy loaded to please Google */
-          posts.slice(0, 2).map((post) => <Card {post} aboveFold={true} />)
-        }
-        {posts.slice(2).map((post) => <Card {post} />)}
-      </div>
-    </main>
-    <aside>
-      <SearchField />
-      <TagCloud />
-    </aside>
-  </div>
+            <div class="grid gap-10 lg:gap-8">
+                {
+                    /* First 2 images should not be lazy loaded to please Google */
+                    posts
+                        .slice(0, 2)
+                        .map((post) => <Card {post} aboveFold={true} />)
+                }
+                {posts.slice(2).map((post) => <Card {post} />)}
+            </div>
+        </main>
+        <aside>
+            <SearchField />
+            <TagCloud />
+        </aside>
+    </div>
 </BaseLayout>
