@@ -16,11 +16,10 @@ export default {
                 ],
             },
             colors: {
-                // "brand": "#761B10",
-                // brand: "#591C2F",
+                
                 brand: "#ef4444",
                 accent: "#f5f5f4",
-                // dark: "#2c2a24",
+
                 dark: "#000000e6",
             },
             typography: {

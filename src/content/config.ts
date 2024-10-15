@@ -10,8 +10,8 @@ const article = defineCollection({
             pubDate: z.string().transform((str) => new Date(str)),
             tags: z.array(z.string()),
             popularPost: z.boolean().default(false).optional(),
-            coverImage: image().optional(),
-            coverAlt: z.string().default("No Alt Specified").optional(),
+            coverImage: image(),
+            coverAlt: z.string().default("No Alt Specified"),
             draft: z.boolean().default(false).optional(),
         }),
 });
