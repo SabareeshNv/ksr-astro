@@ -11,16 +11,13 @@ const nav = [
 ];
 ---
 
-<div class="usefull mb-4 rounded border p-4 shadow-sm md:mb-5 lg:mb-6">
-    <div class="mb-4 text-xl font-medium text-gray-100">Useful Links</div>
-    <ul class="space-y-4">
+<div class="mb-4 rounded border bg-gray-100 shadow-sm md:mb-5 lg:mb-6">
+    <div class="heading mb-2 px-4 pt-2 text-xl font-medium">Useful Links</div>
+    <ul class="divide-y-2">
         {
             nav.map((item) => (
-                <li>
-                    <a
-                        href={`${item.link}`}
-                        class="text-gray-200 hover:underline"
-                    >
+                <li class="px-4 py-2">
+                    <a href={`${item.link}`} class=" hover:underline">
                         {item.text}
                     </a>
                 </li>
@@ -28,9 +25,3 @@ const nav = [
         }
     </ul>
 </div>
-
-<style>
-    .usefull {
-        background-color: hsl(240, 100%, 5%);
-    }
-</style>

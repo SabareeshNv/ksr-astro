@@ -102,7 +102,7 @@ img {
     }
 
     .typography {
-        @apply prose prose-lg prose-stone lg:prose-xl marker:text-stone-700;
+        @apply prose prose-lg prose-stone marker:text-stone-700;
         @apply prose-a:text-brand prose-a:underline-offset-8;
 
         overflow-wrap: break-word;
@@ -111,13 +111,16 @@ img {
         word-spacing: 0.2em;
         /* Small extra word gap (default is a bit crammed */
 
+        line-height: 1.6;
+
         h1,
         h2,
         h3,
         h4,
         h5,
         h6 {
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
         }
 
         blockquote {
@@ -142,5 +145,18 @@ img {
         width: clamp(2em, 25%, 4em);
         height: 3px;
         @apply bg-brand;
+    }
+
+    .hr {
+        display: flex;
+        align-items: center;
+    }
+    
+    .hr::after {
+        content: "";
+        flex: 1;
+        margin-left: 1rem;
+        height: 2px;
+        background-color: #1c1917;
     }
 }

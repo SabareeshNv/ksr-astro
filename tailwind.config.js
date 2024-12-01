@@ -16,10 +16,8 @@ export default {
                 ],
             },
             colors: {
-                
                 brand: "#ef4444",
                 accent: "#f5f5f4",
-
                 dark: "#000000e6",
             },
             typography: {

@@ -8,12 +8,11 @@ const { title, pubDate, summary, coverImage, coverAlt } = post.data;
 
 <article>
     <h2>
-        <a
-            href={`/article/${post.slug}/`}
-            class="font-serif text-2xl font-bold md:text-3xl">{title}</a
+        <a href={`/article/${post.slug}/`} class="font-serif text-2xl font-bold"
+            >{title}</a
         >
     </h2>
-    <Date date={pubDate} class="text-lg" />
+    <Date date={pubDate} class="font-light" />
     <div class="mt-2 grid gap-4 lg:grid-cols-2">
         <a href={`/article/${post.slug}/`}>
             {
@@ -35,7 +34,7 @@ const { title, pubDate, summary, coverImage, coverAlt } = post.data;
                 )
             }
         </a>
-        <div class="font-manjari text-lg">
+        <div class="font-manjari">
             {summary}
         </div>
     </div>
