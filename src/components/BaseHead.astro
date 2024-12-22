@@ -4,7 +4,7 @@ interface Props {
     description: string;
 }
 
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from 'astro:transitions';
 
 import "../styles/tailwind.css";
 // Alegreta Font
@@ -62,4 +62,4 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 />
 
 {/* For Astros implementation of View Transition CSS */}
-<ViewTransitions />
+<ClientRouter />
