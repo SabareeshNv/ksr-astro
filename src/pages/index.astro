@@ -1,6 +1,5 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import KsrHeadShot from "../components/KsrHeadShot.astro";
 import Card from "../components/Card.astro";
 import SearchField from "../components/SearchField.astro";
 import TagCloud from "../components/TagCloud.astro";
@@ -28,7 +27,6 @@ const description =
             {posts.slice(2).map((post) => <Card {post} />)}
         </main>
         <aside>
-            <KsrHeadShot />
             <SearchField />
             <UsefulLinks />
             <PopularPosts />

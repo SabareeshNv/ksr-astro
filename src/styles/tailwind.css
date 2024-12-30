@@ -102,7 +102,7 @@ img {
     }
 
     .typography {
-        @apply prose prose-lg prose-stone marker:text-stone-700;
+        @apply prose prose-lg lg:prose-xl prose-stone marker:text-stone-700;
         @apply prose-a:text-brand prose-a:underline-offset-8;
 
         overflow-wrap: break-word;

@@ -1,4 +1,6 @@
 ---
+import type { CollectionEntry } from 'astro:content';
+
 import BaseLayout from "./BaseLayout.astro";
 import Hero from "../components/Hero.astro";
 import SearchField from "../components/SearchField.astro";
@@ -6,6 +8,7 @@ import TagCloud from "../components/TagCloud.astro";
 import PopularPosts from "../components/PopularPosts.astro";
 import { Image } from "astro:assets";
 
+type Props = CollectionEntry<'article'>['data'];
 const { title, malayalamTitle, description, pubDate, coverImage, coverAlt } =
     Astro.props;
 
